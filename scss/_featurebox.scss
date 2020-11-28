@@ -1,0 +1,47 @@
+// fancy box styles
+.overlay-box-top {
+    padding-bottom: 150px;
+    @include mobile {
+        padding-bottom: 30px;
+    }
+}
+.overlay-box-wrapper {
+    margin-bottom: -75px;
+    @include mobile {
+        margin-bottom: 10px;
+    }
+    .overlay-box {
+        transform: translateY(-50%);
+        @include mobile {
+            transform: translateY(0);
+            margin: 15px 0;
+        }
+        .overlay-box-inner {
+            position: relative;
+            padding: 50px 70px;
+            text-align: center;
+            @include mobile {
+                padding: 20px;
+            }
+            .hover-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition-duration: 0.3s;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            &:hover {
+                .hover-bg {
+                    opacity: 1;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+    }
+}

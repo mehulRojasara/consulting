@@ -1,0 +1,30 @@
+// background
+
+.section-bg, .section-bg-scroll{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+.section-bg-scroll{
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+.page-banner{
+    min-height: 75vh;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+}
+
+.bg-light-gray{
+    background-color: #fafafa;
+}

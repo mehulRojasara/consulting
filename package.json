@@ -1,0 +1,35 @@
+{
+  "name": "consulting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "author": "MR",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.4.1",
+    "imagesloaded": "^4.1.4",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.4.1",
+    "jquery-appear-original": "^0.6.2",
+    "justifiedGallery": "^3.7.0",
+    "swiper": "^4.5.1",
+    "wow.js": "^1.2.2"
+  }
+}

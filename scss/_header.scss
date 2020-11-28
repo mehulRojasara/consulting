@@ -1,0 +1,31 @@
+/* Site Navigation */
+header {
+    &.sticky {
+        background-color: $secondary;
+    }
+    .navbar {
+        .navbar-toggler{
+            background-color: $primary;
+        }
+        .navbar-brand {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        @include tablate{
+            .navbar-collapse{
+                background-color: $secondary;
+            }
+        }
+        .navbar-nav {
+            .nav-link {
+                padding: 12px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 500;
+                &.active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

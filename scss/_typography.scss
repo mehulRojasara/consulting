@@ -1,0 +1,44 @@
+// typography style
+p {
+    margin: 0 0 1rem;
+}
+
+// custome font size
+.fs-16 {
+    font-size: 16px;
+    line-height: 26px;
+}
+.fs-18 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.extra-small-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 5px;
+}
+
+.small-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.medium-title {
+    font-size: 50px;
+    font-weight: 500;
+}
+.big-title {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+// specific font sizes for ionicon
+.media-icon {
+    font-size: 55px;
+}
+.ionicon-stroke-width{
+    stroke-width: 24px;
+}

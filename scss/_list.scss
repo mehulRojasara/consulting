@@ -1,0 +1,115 @@
+// list styles
+.media-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 48px;
+    li {
+        max-width: 48%;
+        margin-bottom: 35px;
+        @include mobile {
+            width: 100%;
+            max-width: unset;
+            margin-bottom: 15px;
+        }
+        .media-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: $secondary;
+            margin: 0 0 20px;
+            line-height: 1;
+        }
+        .media-body {
+            p {
+                font-size: 16px;
+                line-height: 26px;
+                padding-bottom: 0;
+            }
+        }
+        .media-icon,
+        ion-icon {
+            font-size: 55px;
+            margin-right: 24px;
+            color: $primary;
+            @include mobile {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.box-image {
+    overflow: hidden;
+    position: relative;
+    .social-list {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: rgba($secondary, 0.8);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(100%);
+        transition-duration: 0.3s;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 8px;
+            a {
+                height: 40px;
+                width: 40px;
+                display: block;
+                line-height: 40px;
+                font-size: 20px;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    &:hover {
+        .social-list {
+            opacity: 1;
+            transform: translateY(0);
+            transition-duration: 0.3s;
+        }
+    }
+}
+
+.contact-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            display: block;
+            font-size: 26px;
+        }
+    }
+}
+
+.footer-menu {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+        a {
+            display: block;
+            padding: 5px 15px;
+            margin: 0 5px;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
