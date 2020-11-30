@@ -4,15 +4,18 @@ header {
         background-color: $secondary;
     }
     .navbar {
-        .navbar-toggler{
+        .navbar-toggler {
             background-color: $primary;
         }
         .navbar-brand {
             padding-top: 12px;
             padding-bottom: 12px;
+            @include mobile {
+                max-width: 50%;
+            }
         }
-        @include tablate{
-            .navbar-collapse{
+        @include tablate {
+            .navbar-collapse {
                 background-color: $secondary;
             }
         }

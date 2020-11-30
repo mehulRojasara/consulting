@@ -18,27 +18,44 @@ p {
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 5px;
+    @include mobile {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }
 
 .small-title {
     font-size: 22px;
     font-weight: 600;
+    @include mobile {
+        font-size: 14px;
+    }
 }
 
 .medium-title {
     font-size: 50px;
     font-weight: 500;
+    @include mobile {
+        font-size: 24px;
+    }
 }
 .big-title {
     font-size: 60px;
     line-height: 80px;
     font-weight: 600;
+    @include mobile {
+        font-size: 30px;
+        line-height: 45px;
+    }
 }
 
 // specific font sizes for ionicon
 .media-icon {
     font-size: 55px;
+    @include mobile {
+        font-size: 35px;
+    }
 }
-.ionicon-stroke-width{
+.ionicon-stroke-width {
     stroke-width: 24px;
 }

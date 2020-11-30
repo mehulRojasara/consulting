@@ -1,8 +1,15 @@
 .section-medium-space {
     padding-top: 75px;
     padding-bottom: 75px;
+    @include mobile{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 .btn {
     padding: 10px 20px;
     border-radius: 2px;
+    @include mobile {
+        padding: 5px 15px;
+    }
 }
